@@ -1,0 +1,8 @@
+1. window.history.replaceState(null, null, window.location.href);  
+解决首屏因为 history 引起的 系统返回条 的button高度 遮挡 内容问题
+2..https://www.caniuse.com/   兼容性网站
+3.在使用整个屏幕当作 盒子容器时 可以使用 css的 cale 函数 配合 100vh来做减法计算
+标准流盒子水平居中可以使用margin 0 auto（给父盒子加）
+
+获取dom元素 然后用dom元素.style. 就可以通过dom来操作样式了
+4.兼容性 安卓5  ios10

@@ -1,0 +1,73 @@
+在使用整个屏幕当作 盒子容器时 可以使用 css的 cale 函数 配合 100vh来做减法计算
+标准流盒子水平居中可以使用margin 0 auto（给父盒子加）
+
+获取dom元素 然后用dom元素.style. 就可以通过dom来操作样式了
+
+根目录下创建postcss.config.js文件
+
+子组件就像引入代码 如果消除滚动条 需要在父组件中 限制
+
+Promise.race(iterable) iterable是一个类似于数组的迭代器 看其中的值谁先是
+Promise值返回 那么他的返回值就是第一个Promise返回的值
+
+Promise.any() 接收一个Promise可迭代对象，只要其中的一个 promise 成功，
+就返回那个已经成功的 promise 。如果可迭代对象中没有一个 promise 成功
+（即所有的 promises 都失败/拒绝），就返回一个失败的 promise 
+本质上，这个方法和Promise.all()是相反的。
+
+Promise.all() 方法接收一个promise的iterable类型 只要其中一个promise失败
+就返回这个已经失败的promise如果所有的可迭代对象的promise成功那么就返回一个
+成功的promise 
+
+兼容性 安卓5  ios10
+ctrl + alt + f qq 截圖翻译工具
+
+手机打开本地文件
+1.首先先把文件打包 成dist文件夹
+2.引入 server.js文件（一个node文件 启动服务器）
+3.然后在 server.js中换成 自己要上传服务器的文件位置
+4.也可以自己更改端口号（以防止端口号被占用）
+5.使用node 打开server.js 启动服务器
+6.在地址栏输入“localhost:8081/”+你要访问的文件名称；例如localhost:8081/index.html
+7.打开 https://cli.im/url/info?539e0db816f951fb72eb07468872eaf3（生成扫描二维码）
+7.1打开命令行 查看自己的ip地址 将localhost替换 
+7.2在浏览器中打开的 网址输入 即可生成  二维码 （在命令行中输入ipconfig即可得到IPv4）
+如http://10.100.108.42:8081/index.html（已替换）
+8.手机扫描 就可以看到自己的页面了
+
+常用实用网站
+1.https://www.lodashjs.com/       lodash函数库（优化升级 如节流防抖）
+2.https://cli.im/url/info?435ddc07adf4dc705a30f66d2a13718f     
+本地文件手机二维码生成器 （手机端可以访问）
+3.https://www.cnblogs.com/lengyue0030/p/7458741.html （起一个简单的服务器）
+4.https://www.jianshu.com/p/876a351a008a （vue打包生成的dist文件中index.html直接访问）
+5.https://www.bilibili.com/video/av38379328/?p=1 （ts视频）
+6.https://www.caniuse.com/   兼容性网站
+
+快捷键
+1.shift + 右键 可以快速 打开 命令行 （在当前位置）
+2.win + 左箭头/右箭头 可以使屏幕快速左右布局
+3.谷歌浏览器可以将控制台 打开成一个新窗口
+
+vue cli
+在使用vue时 可以直接输入命令 yarn serve --open 这样就可以直接打开 网址了
+
+生产环境  上线之后的环境     开发环境     开发时的环境     
+测试环境  是开外网 可以在公司外部访问
+
+npm -S 和 -D
+-S 依赖会在生产环境下也存在
+-D 仅在开发环境下存在  在生产环境中会被 干掉
+
+查询字符串传参可以 使数据持久化
+
+打开chrome的文件夹 可以找到以前下载文件的位置 可以用来找 已下载的exe
+
+handler 是一个以函数为属性的 对象
+
+茄子快传 快牙 可以跨平台 传输
+
+事件event 需要兼容  event
+
+instanceof 用来检测 构造函数的 的 prototype 是否出现在 某个实例对象的原型链上 即课可以查看实例是什么类型
+

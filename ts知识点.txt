@@ -1,0 +1,65 @@
+1.浏览器不支持 TypeScript 和 ES6 所以需要编译 
+使用命令 tsc index.ts 可以编译 ts文件为js文件
+ 
+2.配置tsconfig.js文件 自动编译ts为js文件
+2.1输入tsc --init 
+2.2在 compilerOptions 中配置 outDir:'./'为 outDir:'./js'
+2.3在 终端 中点击 运行任务
+2.4点击typescript
+2.5点击tsc监视 - tsconfig.json 即可以完成自动编译为js功能
+
+3.可以直接在文件夹路径下输入cmd 这样可以在该目录下打开cmd命令窗口
+同样的 方法也可以打开 powerShell
+4.typescript中的数据类型 typescript中为了编写代码更加规范，有利于维护，增加了类型校验
+4.1javascript类型 
+boolean  number  string  array Function Object Symbol null undifined 
+
+4.2补充类型
+任意类型 any  any类型(可以绕过类型检查，因此，any类型的数据可以赋值给任意类型)
+元组类型 tuple 元祖类型(Tuple): 一个固定长度的数组，并且数组中的每一项的类型确定
+void类型 void类型(通常用于约束函数的返回值，表示函数不返回任何东西)
+never类型  never类型(其他类型（null和undefined）的子类型，代表从来不会出现的值)
+意味着声明never的变量只能被never类型所赋值
+字面量类型(使用一个值进行约束) let a:"A"; // a永远只能为A
+let tu:[string, number];  tu = ["d", 2];
+枚举类型 enum  数字枚举 若无默认值, 默认从0开始, 依次递增
+
+5.ts中没有object类型
+6.as ts断言 可以更改 原本的类型
+?: any 这个值可有可无 有的话可以是任意类型
+7.数组的定义
+方式一   let arr:number[] = [1,2,3] 数组中全是 number类型 
+方式二 let arr:Array<number>=[1,2,3]
+8.元组类型
+let arr:[string,number,boolean] = ["ts",1,true]
+9.接口的作用 在面向对象的编程中，接口是一种规范的定义 他定义了行为和动作的规范（interface）
+9.1属性类接口  
+规定有什么类型 就只能有什么类型 而且不能多 也不能少
+9.1.1可选属性口
+可以使用 ？：表示该 参数为可选项
+9.2函数类型接口
+定义好后， 传递的参数类型需要符合 接口定义的要求
+9.3可索引接口 （数组/对象的约束）
+interface UserArr{ [index:number]:string }    arr:UserArr  约束条件 index为number value为string 
+9.4类类型接口（对类的约束 抽象类有点相似）
+父类定义一个接口 子类继承的时候 需要按照这个接口的标准来 继承（传参）
+implements 类接口的时候使用
+9.5接口扩展
+接口可以使用 extends来继承 父接口
+
+10.ts特殊符号用法 
+10.1  属性或参数中使用 ？：表示该属性或参数为可选项
+10.2  属性或参数中使用 ！：表示强制解析，常用于vue-decorator中的@Prop
+10.3  变量后使用 ！：表示类型推断排除 null undefined
+
+11. typescript中的抽象类是提供其它类的基类，不能直接被实例化；abstract 
+用abstract关键字定义的抽象方法和抽象类，不包括具体实现必须在派生类实现
+并且抽象方法只能放在 抽象类里面
+abstract class Animal {  }  Animal 就是基类（父类） 
+
+ // temp['filteruserid'] = temp['filteruserid'] ? temp.filteruserid.join(',') : null;
+  // temp['tags_uuid'] = temp['tags_uuid'] ? temp.tags_uuid.join(',') : null;
+
+12.declare 在编写代码时会有只能提示 类似于声明
+ 
+
