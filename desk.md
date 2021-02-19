@@ -60,3 +60,19 @@ this._getValue  传入参数 参数1 rowdata 参数2 item（数组项即每行�
 2.如果不是qiuer25 那么在工作台 使用 导入导出 将 导出的 roots部分黏贴 复制到 需要导入的里面的 
 ```
 
+### 7.按钮在query中平行相接
+
+```
+在query的form中加入align，在align中书写的 button 都是相连的没有较大间隙
+```
+
+### 8. dialog传参
+
+```
+通过query打开dialog 传递参数和回调
+传递的参数会在 dialog中的 scope中 存储
+当dialog关闭时 可以触发query中的关闭回调 
+在dialog内 使用 this.root.close(0, output)
+第一个参数是回调的第一个code 第二个参数是回调的第二个参数data
+```
+

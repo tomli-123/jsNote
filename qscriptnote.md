@@ -114,3 +114,16 @@ return下的as
 {return:"file",of:"name",as:"http.file"}
 ```
 
+### 14.读文件
+
+```
+使用$upload[0] 来替换 $context.$file[0]
+```
+
+### 15.26变动
+
+```
+stream.excel.sheet(stream_xlsx, 0)
+变为 istream.excel.sheet(stream_xlsx, 0)
+```
+
